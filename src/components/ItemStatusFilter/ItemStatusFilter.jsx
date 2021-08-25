@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import './ItemStatusFilter.css';
 
-const ItemStatusFilter = () => {
+class ItemStatusFilter extends Component {
+  render() {
   return (
     <div className="btn-group">
       <button type="button"
@@ -13,6 +14,7 @@ const ItemStatusFilter = () => {
               className="btn btn-outline-secondary">Done</button>
     </div>
   );
+  };
 };
 
 export default ItemStatusFilter;
