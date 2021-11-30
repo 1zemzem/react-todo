@@ -7,7 +7,7 @@ export default class SearchPanel extends Component {
     term: ""
   };
 
-  onSearchChange = (e) => {
+  onChange = (e) => {
 const term = e.target.value;
 this.setState({ term });
 this.props.onSearchChange(term);
@@ -20,7 +20,7 @@ this.props.onSearchChange(term);
         className="form-control search-input"
         placeholder="type to search"
         value= {this.state.term}
-        onChange= {this.onSearchChange}
+        onChange= {this.onChange}
       />
     );
   }
